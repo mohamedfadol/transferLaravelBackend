@@ -45,10 +45,13 @@ class TransactionController extends Controller
     public function store(TransactionRequest $request)
     {
         $data = $request->validated();
+        \Log::info($request->status);
         try {
                 DB::beginTransaction();
                 
                 $user = $request->user();
+                \Log::info($user);
+                $user_account = User::with('account')->where('email',$request->account_withdraw)->first();
                 $transaction = new Transaction();
                 $transaction->status = $request->status;
                 $transaction->created_by = $user->id;
@@ -57,22 +60,22 @@ class TransactionController extends Controller
                 $transaction->save();
                 $transaction_payment = TransactionPayment::create(['transaction_id' => $transaction->id, 'amount' => $request->final_total, 'method' => $request->method]);
                 $deposit_to = [
-                    'account_id' => $request->account_deposit,
+                    'account_id' => $user->id,
                     'transaction_id' => $transaction->id,
                     'transaction_payment_id' => $transaction_payment->id,
                     'amount' => $request->final_total,
                     'type' => 'debit',
-                    'transaction_id' => $transaction->id,
+                    'method' => 'debit',
                     'user_id' => $user->id
                 ];
 
                 $account_from =[
-                    'account_id' => $request->account_withdraw,
+                    'account_id' => $user_account->account->id,
                     'transaction_id' => $transaction->id,
                     'transaction_payment_id' => $transaction_payment->id,
                     'amount' => $request->final_total,
                     'type' => 'credit',
-                    'transaction_id' => $transaction->id,
+                    'method' => 'debit',
                     'user_id' => $user->id
                 ];
 
@@ -82,7 +85,7 @@ class TransactionController extends Controller
                 DB::commit();
 
             return  $this->success([
-                'transactions' => $transaction->load('payment.acconttransactions.account.owner')],
+                'transactions' => $transaction],
                 'Transaction add successfully'
             );
            

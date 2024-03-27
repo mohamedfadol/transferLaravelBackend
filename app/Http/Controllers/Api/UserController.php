@@ -29,9 +29,16 @@ class UserController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function fetchUser($id)
     {
-        //
+        \Log::info($id);
+        $user = User::findOrFail($id);
+        if(is_null($user)) {
+            return  ["success" => false, "message" => "There no user data"];
+        }
+        return $this->success([
+            'user' => $user,
+        ], 'User successfully.');
     }
 
     /**

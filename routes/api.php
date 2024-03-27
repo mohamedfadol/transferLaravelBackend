@@ -36,6 +36,7 @@ Route::prefix('auth')->as('auth.')->group(function(){
 
         Route::group(['prefix' => 'users'], function () { 
             Route::get('get-users',[UserController::class, 'index']); 
+            Route::get('get-user/{id}',[UserController::class, 'fetchUser']); 
         });
         
         Route::group(['prefix' => 'currencies'], function () { 
