@@ -1,0 +1,6 @@
+storePassword=mohamed@#2023
+keyPassword=mohamed@#2023
+keyAlias=bingnotes
+storeFile=../app/bingnotes.jks
+
+"keytool -genkey -v -keystore D:\flutter_projects\keys\transfer\bingnotes.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias transfer"

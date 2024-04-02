@@ -1,31 +1,5 @@
- [2024-03-27 12:25:43] local.INFO: pending  
-[2024-03-27 12:25:43] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:25:43] local.EMERGENCY: File:C:\wamp64\www\transferLaravelBackend\app\Http\Controllers\Api\TransactionController.phpLine:73Message:Attempt to read property "id" on null  
-[2024-03-27 12:26:48] local.INFO: pending  
-[2024-03-27 12:26:48] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:29:21] local.INFO: pending  
-[2024-03-27 12:29:21] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:30:15] local.INFO: pending  
-[2024-03-27 12:30:15] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:31:27] local.INFO: pending  
-[2024-03-27 12:31:27] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:32:46] local.INFO: pending  
-[2024-03-27 12:32:46] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:35:19] local.INFO: pending  
-[2024-03-27 12:35:19] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:35:50] local.INFO: pending  
-[2024-03-27 12:35:50] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:40:01] local.INFO: pending  
-[2024-03-27 12:40:01] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:41:08] local.INFO: pending  
-[2024-03-27 12:41:08] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:43:39] local.INFO: pending  
-[2024-03-27 12:43:39] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:45:01] local.INFO: pending  
-[2024-03-27 12:45:01] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:45:11] local.INFO: pending  
-[2024-03-27 12:45:11] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:45:38] local.INFO: pending  
-[2024-03-27 12:45:38] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
-[2024-03-27 12:49:30] local.INFO: pending  
-[2024-03-27 12:49:30] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
+ [2024-04-01 03:42:13] local.INFO: pending  
+[2024-04-01 03:42:13] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
+[2024-04-01 03:42:14] local.EMERGENCY: File:C:\wamp64\www\transferLaravelBackend\app\Http\Controllers\Api\TransactionController.phpLine:73Message:Attempt to read property "account" on null  
+[2024-04-01 13:57:26] local.INFO: pending  
+[2024-04-01 13:57:26] local.INFO: {"id":1,"name":"mohamed fadol","email":"test@test.com","email_verified_at":null,"created_at":"2024-03-26T18:20:57.000000Z","updated_at":"2024-03-26T18:20:57.000000Z"}  
